@@ -89,8 +89,6 @@ public class InstagramPhotoAdapter extends ArrayAdapter<InstagramPhoto>{
         //clear our profile pic image view
         ivProfile.setImageResource(0);
         com.squareup.picasso.Transformation transformation = new RoundedTransformationBuilder()
-                .borderColor(Color.BLACK)
-                .borderWidthDp(1)
                 .cornerRadiusDp(30)
                 .oval(false)
                 .build();
