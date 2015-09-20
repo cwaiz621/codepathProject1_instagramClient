@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPhoto"
+        android:layout_below="@+id/ivProfilePic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:minHeight="50dp"
+         />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tvCaption"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/ivPhoto"
+        android:textSize="15sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:background="#CCFFFFFF" />
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/ivProfilePic"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:gravity="bottom"
+        android:textColor="#1414c0"/>
+
+    <TextView
+        android:id="@+id/tvRelativeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time            "
+        android:layout_above="@+id/ivPhoto"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:textColor="#b6c3c7"/>
+
+
+    <TextView
+        android:id="@+id/tvLikesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"
+        android:textColor="#1414c0"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvCusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comments"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvLikesCount"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="15sp"
+         />
+
+
+</RelativeLayout>
